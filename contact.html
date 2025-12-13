@@ -45,7 +45,7 @@
         </h1>
 
         <!-- Contact Card -->
-        <form id="contact-form" class="bg-white p-10 rounded-2xl shadow-xl border-2 border-orange-200">
+        <form id="contact-form" onsubmit="sendEmail(event)" class="bg-white p-10 rounded-2xl shadow-xl border-2 border-orange-200">
 
             <!-- First & Last Name -->
             <div class="mb-6 flex gap-6">
@@ -104,8 +104,7 @@
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" onsubmit="sendEmail()"
-                class="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-4 rounded-lg shadow-lg shadow-orange-500/40 transition transform hover:scale-105">
+            <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-4 rounded-lg shadow-lg shadow-orange-500/40 transition transform hover:scale-105">
                 Send Message
             </button>
         </form>
@@ -208,7 +207,9 @@
             });
         })();
 
-        function sendEmail() {
+        function sendEmail(event) {
+            event.preventDefault();
+
             const params = {
                 name: document.getElementById("first-name").value + " " + document.getElementById("last-name").value,
                 email: document.getElementById("email").value,
