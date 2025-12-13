@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <link href="./output.css" rel="stylesheet">
+    <title>Nonprofit & Startup Consulting</title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-white min-h-screen text-gray-900 overflow-x-hidden relative">
     <!-- Navigation Bar -->
@@ -14,7 +14,7 @@
             <div class="flex items-center justify-between">
                 <a href="./index.html">
                     <div class="flex items-center gap-4">
-                        <img src="/static/logo.jpg" alt="Wild Card Logo" class="h-12 w-12 drop-shadow-lg">
+                        <img src="static/logo.jpg" alt="Wild Card Logo" class="h-12 w-12 drop-shadow-lg">
                         <div class="text-2xl font-bold text-white drop-shadow-lg">
                             Wild Card Consulting
                         </div>
@@ -31,84 +31,113 @@
         </div>
     </nav>
 
-    <!-- Gradient Background Decorations -->
-    <div aria-hidden="true" class="absolute inset-0 -z-10">
-        <div class="absolute inset-0 bg-gradient-to-b from-orange-100 via-orange-50 to-white"></div>
-        <div class="absolute top-10 -left-32 w-[650px] h-[600px] bg-gradient-to-b from-orange-300 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
-        <div class="absolute bottom-32 right-20 w-[420px] h-[380px] bg-gradient-to-b from-red-300 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-35"></div>
-    </div>
+    <!-- Main Content Container -->
+    <div class="max-w-7xl mx-auto px-6 py-20">
+        <!-- Consulting Section -->
+        <section id="consulting" class="mb-20 relative">
+            <!-- Decorative glow around section -->
+            <div aria-hidden="true" class="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-gradient-radial from-orange-200 via-orange-100 to-transparent opacity-70 rounded-full"></div>
+            </div>
+            
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Nonprofit & Startup Consulting</h2>
+            
+            <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-16">
+                Strategic consulting services to help nonprofits maximize their impact and startups achieve sustainable growth. We bring expertise and innovative thinking to your organization's unique challenges.
+            </p>
 
-    <!-- Contact Container -->
-    <div class="scroll-fade-up container mx-auto px-6 pt-20 pb-20 relative z-10 max-w-2xl">
-        <h1 class="text-5xl font-bold text-center text-gray-800 mb-8">
-            Contact Us
-        </h1>
-
-        <!-- Contact Card -->
-        <form id="contact-form" class="bg-white p-10 rounded-2xl shadow-xl border-2 border-orange-200">
-
-            <!-- First & Last Name -->
-            <div class="mb-6 flex gap-6">
-                <div class="flex-1">
-                    <label class="block text-gray-700 text-sm font-semibold mb-2" for="first-name">
-                        First Name *
-                    </label>
-                    <input id="first-name" name="first_name" type="text"
-                        class="border-2 border-gray-200 rounded-lg w-full py-3 px-4 text-gray-700 focus:border-orange-500 focus:outline-none transition"
-                        placeholder="First Name" required>
+            <!-- Consulting Options -->
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Consulting Services</h3>
+            <div class="scroll-fade-up grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Option 1: Nonprofit Consulting -->
+                <div class="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-orange-400 transition-all duration-300 hover:shadow-2xl flex flex-col">
+                    <div class="text-center mb-6">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Nonprofit Consulting</h4>
+                        <p class="text-gray-600">Amplify your mission and impact</p>
+                    </div>
+                    <div class="flex-grow space-y-3 mb-6">
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Strategic planning and goal setting</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Fundraising strategy development</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Grant writing and proposal support</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Board development and governance</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Program evaluation and impact measurement</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Volunteer management systems</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Marketing and community outreach</span>
+                        </div>
+                    </div>
+                    <a href="./contact.html">
+                        <button class="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 mt-auto">
+                            Learn More
+                        </button>
+                    </a>
                 </div>
 
-                <div class="flex-1">
-                    <label class="block text-gray-700 text-sm font-semibold mb-2" for="last-name">
-                        Last Name *
-                    </label>
-                    <input id="last-name" name="last_name" type="text"
-                        class="border-2 border-gray-200 rounded-lg w-full py-3 px-4 text-gray-700 focus:border-orange-500 focus:outline-none transition"
-                        placeholder="Last Name" required>
+                <!-- Option 2: Startup Consulting -->
+                <div class="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-orange-400 transition-all duration-300 hover:shadow-2xl flex flex-col">
+                    <div class="text-center mb-6">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Startup Consulting</h4>
+                        <p class="text-gray-600">Build and scale your venture</p>
+                    </div>
+                    <div class="flex-grow space-y-3 mb-6">
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Business model development</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Market research and validation</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Pitch deck creation and refinement</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Investor relations and fundraising</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Go-to-market strategy</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Operations and process optimization</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-orange-600 mt-1">✓</span>
+                            <span class="text-gray-600">Growth hacking and scaling strategies</span>
+                        </div>
+                    </div>
+                    <a href="./contact.html">
+                        <button class="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 mt-auto">
+                            Learn More
+                        </button>
+                    </a>
                 </div>
-            </div>
 
-            <!-- Email -->
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-semibold mb-2" for="email">
-                    Email *
-                </label>
-                <input id="email" name="email" type="email"
-                    class="border-2 border-gray-200 rounded-lg w-full py-3 px-4 text-gray-700 focus:border-orange-500 focus:outline-none transition"
-                    placeholder="Your Email" required>
             </div>
-
-            <!-- Subject -->
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-semibold mb-2" for="subject">
-                    Subject *
-                </label>
-                <select id="subject" name="subject"
-                    class="border-2 border-gray-200 rounded-lg w-full py-3 px-4 text-gray-700 focus:border-orange-500 focus:outline-none transition bg-white" required>
-                    <option value="" disabled selected>Choose one</option>
-                    <option>Nonprofit and Startup Consulting</option>
-                    <option>NCSSM Admissions</option>
-                    <option>Academic Tutoring</option>
-                    <option>Other</option>
-                </select>
-            </div>
-
-            <!-- Message -->
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-semibold mb-2" for="message">
-                    Message *
-                </label>
-                <textarea id="message" name="message" rows="5"
-                    class="border-2 border-gray-200 rounded-lg w-full py-3 px-4 text-gray-700 focus:border-orange-500 focus:outline-none transition resize-none"
-                    placeholder="Your Message" required></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit" onsubmit="sendEmail()"
-                class="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-4 rounded-lg shadow-lg shadow-orange-500/40 transition transform hover:scale-105">
-                Send Message
-            </button>
-        </form>
+        </section>
     </div>
 
     <!-- Footer -->
@@ -197,33 +226,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-        (function() {
-            emailjs.init({
-                publicKey: "z3sgg2U3ZQg7fZYi6",
-            });
-        })();
-
-        function sendEmail() {
-            const params = {
-                name: document.getElementById("first-name").value + " " + document.getElementById("last-name").value,
-                email: document.getElementById("email").value,
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value
-            };
-
-            emailjs.send('service_1sxsvnk', 'template_u0gu8nc', params).then(() => {
-                alert('Message sent successfully!');
-                document.getElementById("contact-form").reset();
-            }).catch(() => {
-                alert('Failed to send message. Please try again.');
-            });
-        }
-    </script>
 
     <script>
         const observer = new IntersectionObserver(entries => {
